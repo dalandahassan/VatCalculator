@@ -16,8 +16,10 @@ def display_info():
     type_text(about)
     print(Fore.MAGENTA + "        Created by:         ")
     print(Fore.CYAN + text2art('Basri'))
-    print(Fore.RED + 'Contact on Facebook\nBasri Dalanda\n')
-
+    print(Fore.RED + 'Contact on Facebook\nBasri Dalanda\n' + Style.RESET_ALL)
+    input("Press Enter to continue...")
+    os.system('cls' if os.name == 'nt' else 'clear')
+    
 def header():
     print(Fore.CYAN + text2art( 'Vat Calculator',font="small") + Style.RESET_ALL)
 
@@ -231,4 +233,4 @@ def vat_calculator():
       
     
 if __name__ == "__main__":
-         vat_calculator()
+        vat_calculator()
